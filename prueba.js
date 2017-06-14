@@ -36,8 +36,8 @@ new (function() {
     var descriptor = {
         blocks: [
             ['w', 'Esperar por un tiempo', 'wait_random'],
-	    ['', 'Mover Derecha %n pasos', 'moverDerecha'],
-	    ['R', 'Mostrar estado', 'acciones']
+	    ['', 'Mover Derecha %n pasos', 'moverDerecha', 'distancia'],
+	    ['r', 'Mostrar estado', 'acciones']
         ]
     };
 
