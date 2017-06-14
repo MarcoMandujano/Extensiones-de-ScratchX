@@ -3,7 +3,7 @@
 
 new (function() {
     var ext = this;
-
+    var datos;
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 	
@@ -23,11 +23,21 @@ new (function() {
             callback();
         }, wait*1000);
     };
+	
+    ext.acciones = function(){
+        console.log(datos)
+    }
+	
+    ext.moverDerecha = function(cantidad){
+	datos = "Se movio a la derecha " + distancia + " pasos";
+    }
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
             ['w', 'Esperar por un tiempo', 'wait_random'],
+	    ['', 'Mover Derecha %n pasos', 'moverDerecha'],
+	    ['R', 'Mostrar estado', 'acciones']
         ]
     };
 
