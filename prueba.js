@@ -29,7 +29,7 @@ new (function() {
     }
 	
     ext.moverDerecha = function(cantidad){
-	datos = "Se movio a la derecha " + distancia + " pasos";
+	datos = datos + "Se movio a la derecha " + distancia + " pasos";
     }
 
     // Block and block menu descriptions
